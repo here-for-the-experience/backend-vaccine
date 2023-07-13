@@ -16,4 +16,4 @@ ARG SECRET_TOKEN
 ENV URL=$URL
 ENV SECRET_TOKEN=$SECRET_TOKEN
 
-CMD ["uvicorn", "app.main:app", "--reload", "--host", "0.0.0.0", "--port", "8004"]
+CMD ["uvicorn", "app.main:app", "--reload", "--host", "0.0.0.0", "--port", "8001"]
