@@ -6,7 +6,13 @@
 The workflow first checks if there were any changes to the alembic directory. If there were, the workflow runs alembic upgrade head to upgrade the database schema to the latest version.
 + Next, the workflow builds and runs the Python application in a Docker container. The application is configured to use the DEV_DB_URL and DEV_SECRET_TOKEN secrets from GitHub Secrets.
 + Finally, the workflow runs the pytest test suite. If the tests pass, the workflow sends a message to Slack. If the tests fail, the workflow rolls back the database schema to the previous version.
+
+Sends notification to Slack in both cases the tests pass or fail.
+<img width="1440" alt="image" src="https://github.com/here-for-the-experience/backend-vaccine/assets/77661612/eed10b8f-6e4a-4e92-bae5-4fff888f2ab8">
+
 ##### The workflow is configured to run on Ubuntu-latest. The Python version is set to 3.9.
+
+
 
 
 
