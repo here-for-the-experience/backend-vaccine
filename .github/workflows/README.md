@@ -72,11 +72,11 @@ SLACK_WEBHOOK_URL: The URL of the Slack webhook.
 
 #### Here are some additional details about the workflow:
 
-The **build-and-push** step uses the **docker/build-push-action@v4** action to build and push the Docker image to Docker Hub.
-The **checkout-deployment-repo** step uses the **actions/checkout@v3** action to checkout the deployment repository.
-The **modify-deployment-file** step uses the **sed** command-line tool to update the deployment file to update the Docker image tag.
-The **push-changes-of-deployment** step uses the git command-line tool to push the changes to the deployment repository.
-The **slack** step uses the slackapi/slack-github-action@v1.24.0 action to send a message to Slack.
++ The **build-and-push** step uses the **docker/build-push-action@v4** action to build and push the Docker image to Docker Hub.
++ The **checkout-deployment-repo** step uses the **actions/checkout@v3** action to checkout the deployment repository.
++ The **modify-deployment-file** step uses the **sed** command-line tool to update the deployment file to update the Docker image tag.
++ The **push-changes-of-deployment** step uses the git command-line tool to push the changes to the deployment repository.
++ The **slack** step uses the slackapi/slack-github-action@v1.24.0 action to send a message to Slack.
 
 ##Reporting Problems 
   You can send us a mail at :
