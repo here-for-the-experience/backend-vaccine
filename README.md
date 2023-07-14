@@ -1,4 +1,4 @@
-# Backend for Verifying and Generating Vaccines for Users
+# Backend for Verifying and Generating Vaccines for Users.
 
 A Fastapi backend for Verifying whether an user has taken then vaccine by an admin and creating vaccination certificate for them.
 
